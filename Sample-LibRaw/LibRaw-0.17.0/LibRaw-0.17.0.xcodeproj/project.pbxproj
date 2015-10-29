@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		BD77D1F51BE1472500ED00C8 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		BD77D1F61BE1472500ED00C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BD77D1F71BE1472500ED00C8 /* aclocal.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		BD77D1F81BE1472500ED00C8 /* autom4te.cache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = autom4te.cache; sourceTree = "<group>"; };
+		BD77D1F91BE1472500ED00C8 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bin; sourceTree = "<group>"; };
+		BD77D1FA1BE1472500ED00C8 /* buildfiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildfiles; sourceTree = "<group>"; };
+		BD77D1FB1BE1472500ED00C8 /* buildIncr.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = buildIncr.pl; sourceTree = "<group>"; };
+		BD77D1FC1BE1472500ED00C8 /* Changelog.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Changelog.txt; sourceTree = "<group>"; };
+		BD77D1FD1BE1472500ED00C8 /* clist2html.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = clist2html.pl; sourceTree = "<group>"; };
+		BD77D1FE1BE1472500ED00C8 /* compile */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = compile; sourceTree = "<group>"; };
+		BD77D1FF1BE1472500ED00C8 /* config.guess */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		BD77D2001BE1472500ED00C8 /* config.log */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.log; sourceTree = "<group>"; };
+		BD77D2011BE1472500ED00C8 /* config.status */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.status; sourceTree = "<group>"; };
+		BD77D2021BE1472500ED00C8 /* config.sub */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		BD77D2031BE1472500ED00C8 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		BD77D2041BE1472500ED00C8 /* configure.ac */ = {isa = PBXFileReference; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		BD77D2051BE1472500ED00C8 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		BD77D2061BE1472500ED00C8 /* dcraw */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dcraw; sourceTree = "<group>"; };
+		BD77D2071BE1472500ED00C8 /* depcomp */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		BD77D2081BE1472500ED00C8 /* doc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = doc; sourceTree = "<group>"; };
+		BD77D2091BE1472500ED00C8 /* INSTALL */ = {isa = PBXFileReference; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		BD77D20A1BE1472500ED00C8 /* install-sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		BD77D20B1BE1472500ED00C8 /* internal */ = {isa = PBXFileReference; lastKnownFileType = folder; path = internal; sourceTree = "<group>"; };
+		BD77D20C1BE1472500ED00C8 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lib; sourceTree = "<group>"; };
+		BD77D20D1BE1472500ED00C8 /* libraw */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libraw; sourceTree = "<group>"; };
+		BD77D20E1BE1472500ED00C8 /* libraw.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libraw.pc; sourceTree = "<group>"; };
+		BD77D20F1BE1472500ED00C8 /* libraw.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = libraw.pc.in; sourceTree = "<group>"; };
+		BD77D2101BE1472500ED00C8 /* LibRaw.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = LibRaw.pro; sourceTree = "<group>"; };
+		BD77D2111BE1472500ED00C8 /* LibRaw.sln */ = {isa = PBXFileReference; lastKnownFileType = text; path = LibRaw.sln; sourceTree = "<group>"; };
+		BD77D2121BE1472500ED00C8 /* libraw_build.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libraw_build.h; sourceTree = "<group>"; };
+		BD77D2131BE1472500ED00C8 /* libraw_r.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libraw_r.pc; sourceTree = "<group>"; };
+		BD77D2141BE1472500ED00C8 /* libraw_r.pc.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = libraw_r.pc.in; sourceTree = "<group>"; };
+		BD77D2151BE1472500ED00C8 /* libtool */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = libtool; sourceTree = "<group>"; };
+		BD77D2161BE1472500ED00C8 /* LICENSE.CDDL */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.CDDL; sourceTree = "<group>"; };
+		BD77D2171BE1472500ED00C8 /* LICENSE.LGPL */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.LGPL; sourceTree = "<group>"; };
+		BD77D2181BE1472500ED00C8 /* LICENSE.LibRaw.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LICENSE.LibRaw.pdf; sourceTree = "<group>"; };
+		BD77D2191BE1472500ED00C8 /* ltmain.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
+		BD77D21A1BE1472500ED00C8 /* m4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = m4; sourceTree = "<group>"; };
+		BD77D21B1BE1472500ED00C8 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		BD77D21C1BE1472500ED00C8 /* Makefile-preprocess.msvc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Makefile-preprocess.msvc"; sourceTree = "<group>"; };
+		BD77D21D1BE1472500ED00C8 /* Makefile.am */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		BD77D21E1BE1472500ED00C8 /* Makefile.dist */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.dist; sourceTree = "<group>"; };
+		BD77D21F1BE1472500ED00C8 /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		BD77D2201BE1472500ED00C8 /* Makefile.mingw */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.mingw; sourceTree = "<group>"; };
+		BD77D2211BE1472500ED00C8 /* Makefile.msvc */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.msvc; sourceTree = "<group>"; };
+		BD77D2221BE1472500ED00C8 /* missing */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		BD77D2231BE1472500ED00C8 /* object */ = {isa = PBXFileReference; lastKnownFileType = folder; path = object; sourceTree = "<group>"; };
+		BD77D2241BE1472500ED00C8 /* RawSpeed */ = {isa = PBXFileReference; lastKnownFileType = folder; path = RawSpeed; sourceTree = "<group>"; };
+		BD77D2251BE1472500ED00C8 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		BD77D2261BE1472500ED00C8 /* README.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.cmake; sourceTree = "<group>"; };
+		BD77D2271BE1472500ED00C8 /* README.demosaic-packs */ = {isa = PBXFileReference; lastKnownFileType = text; path = "README.demosaic-packs"; sourceTree = "<group>"; };
+		BD77D2281BE1472500ED00C8 /* README.RawSpeed.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.RawSpeed.txt; sourceTree = "<group>"; };
+		BD77D2291BE1472500ED00C8 /* rsxml2c.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = rsxml2c.sh; sourceTree = "<group>"; };
+		BD77D22A1BE1472500ED00C8 /* samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = samples; sourceTree = "<group>"; };
+		BD77D22B1BE1472500ED00C8 /* shlib-version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "shlib-version.sh"; sourceTree = "<group>"; };
+		BD77D22C1BE1472500ED00C8 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		BD77D22D1BE1472500ED00C8 /* version.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = version.sh; sourceTree = "<group>"; };
+		BD77D22E1BE1472500ED00C8 /* win32pre.cmd */ = {isa = PBXFileReference; lastKnownFileType = text; path = win32pre.cmd; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BD77D1EF1BE1472500ED00C8 = {
+			isa = PBXGroup;
+			children = (
+				BD77D1F51BE1472500ED00C8 /* .DS_Store */,
+				BD77D1F61BE1472500ED00C8 /* .gitignore */,
+				BD77D1F71BE1472500ED00C8 /* aclocal.m4 */,
+				BD77D1F81BE1472500ED00C8 /* autom4te.cache */,
+				BD77D1F91BE1472500ED00C8 /* bin */,
+				BD77D1FA1BE1472500ED00C8 /* buildfiles */,
+				BD77D1FB1BE1472500ED00C8 /* buildIncr.pl */,
+				BD77D1FC1BE1472500ED00C8 /* Changelog.txt */,
+				BD77D1FD1BE1472500ED00C8 /* clist2html.pl */,
+				BD77D1FE1BE1472500ED00C8 /* compile */,
+				BD77D1FF1BE1472500ED00C8 /* config.guess */,
+				BD77D2001BE1472500ED00C8 /* config.log */,
+				BD77D2011BE1472500ED00C8 /* config.status */,
+				BD77D2021BE1472500ED00C8 /* config.sub */,
+				BD77D2031BE1472500ED00C8 /* configure */,
+				BD77D2041BE1472500ED00C8 /* configure.ac */,
+				BD77D2051BE1472500ED00C8 /* COPYRIGHT */,
+				BD77D2061BE1472500ED00C8 /* dcraw */,
+				BD77D2071BE1472500ED00C8 /* depcomp */,
+				BD77D2081BE1472500ED00C8 /* doc */,
+				BD77D2091BE1472500ED00C8 /* INSTALL */,
+				BD77D20A1BE1472500ED00C8 /* install-sh */,
+				BD77D20B1BE1472500ED00C8 /* internal */,
+				BD77D20C1BE1472500ED00C8 /* lib */,
+				BD77D20D1BE1472500ED00C8 /* libraw */,
+				BD77D20E1BE1472500ED00C8 /* libraw.pc */,
+				BD77D20F1BE1472500ED00C8 /* libraw.pc.in */,
+				BD77D2101BE1472500ED00C8 /* LibRaw.pro */,
+				BD77D2111BE1472500ED00C8 /* LibRaw.sln */,
+				BD77D2121BE1472500ED00C8 /* libraw_build.h */,
+				BD77D2131BE1472500ED00C8 /* libraw_r.pc */,
+				BD77D2141BE1472500ED00C8 /* libraw_r.pc.in */,
+				BD77D2151BE1472500ED00C8 /* libtool */,
+				BD77D2161BE1472500ED00C8 /* LICENSE.CDDL */,
+				BD77D2171BE1472500ED00C8 /* LICENSE.LGPL */,
+				BD77D2181BE1472500ED00C8 /* LICENSE.LibRaw.pdf */,
+				BD77D2191BE1472500ED00C8 /* ltmain.sh */,
+				BD77D21A1BE1472500ED00C8 /* m4 */,
+				BD77D21B1BE1472500ED00C8 /* Makefile */,
+				BD77D21C1BE1472500ED00C8 /* Makefile-preprocess.msvc */,
+				BD77D21D1BE1472500ED00C8 /* Makefile.am */,
+				BD77D21E1BE1472500ED00C8 /* Makefile.dist */,
+				BD77D21F1BE1472500ED00C8 /* Makefile.in */,
+				BD77D2201BE1472500ED00C8 /* Makefile.mingw */,
+				BD77D2211BE1472500ED00C8 /* Makefile.msvc */,
+				BD77D2221BE1472500ED00C8 /* missing */,
+				BD77D2231BE1472500ED00C8 /* object */,
+				BD77D2241BE1472500ED00C8 /* RawSpeed */,
+				BD77D2251BE1472500ED00C8 /* README */,
+				BD77D2261BE1472500ED00C8 /* README.cmake */,
+				BD77D2271BE1472500ED00C8 /* README.demosaic-packs */,
+				BD77D2281BE1472500ED00C8 /* README.RawSpeed.txt */,
+				BD77D2291BE1472500ED00C8 /* rsxml2c.sh */,
+				BD77D22A1BE1472500ED00C8 /* samples */,
+				BD77D22B1BE1472500ED00C8 /* shlib-version.sh */,
+				BD77D22C1BE1472500ED00C8 /* src */,
+				BD77D22D1BE1472500ED00C8 /* version.sh */,
+				BD77D22E1BE1472500ED00C8 /* win32pre.cmd */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		BD77D1F41BE1472500ED00C8 /* LibRaw-0.17.0 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = BD77D22F1BE1472500ED00C8 /* Build configuration list for PBXLegacyTarget "LibRaw-0.17.0" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/famseedesigner1/ios-sample-codes/Exif/LibRaw-0.17.0";
+			dependencies = (
+			);
+			name = "LibRaw-0.17.0";
+			passBuildSettingsInEnvironment = 1;
+			productName = "LibRaw-0.17.0";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		BD77D1F01BE1472500ED00C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = BD77D1F31BE1472500ED00C8 /* Build configuration list for PBXProject "LibRaw-0.17.0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BD77D1EF1BE1472500ED00C8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD77D1F41BE1472500ED00C8 /* LibRaw-0.17.0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		BD77D1F11BE1472500ED00C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BD77D1F21BE1472500ED00C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BD77D2301BE1472500ED00C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "LibRaw-0.17.0";
+			};
+			name = Debug;
+		};
+		BD77D2311BE1472500ED00C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "LibRaw-0.17.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD77D1F31BE1472500ED00C8 /* Build configuration list for PBXProject "LibRaw-0.17.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD77D1F11BE1472500ED00C8 /* Debug */,
+				BD77D1F21BE1472500ED00C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD77D22F1BE1472500ED00C8 /* Build configuration list for PBXLegacyTarget "LibRaw-0.17.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD77D2301BE1472500ED00C8 /* Debug */,
+				BD77D2311BE1472500ED00C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD77D1F01BE1472500ED00C8 /* Project object */;
+}
