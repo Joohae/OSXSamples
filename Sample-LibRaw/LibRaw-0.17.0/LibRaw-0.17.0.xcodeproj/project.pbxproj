@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		BD77D1F51BE1472500ED00C8 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		BD77D1F51BE1472500ED00C8 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = text; path = .DS_Store; sourceTree = "<group>"; };
 		BD77D1F61BE1472500ED00C8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BD77D1F71BE1472500ED00C8 /* aclocal.m4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
 		BD77D1F81BE1472500ED00C8 /* autom4te.cache */ = {isa = PBXFileReference; lastKnownFileType = folder; path = autom4te.cache; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
-			buildWorkingDirectory = "/Users/famseedesigner1/ios-sample-codes/Exif/LibRaw-0.17.0";
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = "LibRaw-0.17.0";
