@@ -14,6 +14,16 @@
 		BD7D87741BE2950600774774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7D87721BE2950600774774 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BDA014FD1BE2A41E0010B04B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7D875C1BE2950600774774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDA014F91BE2A3D70010B04B;
+			remoteInfo = libraw;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		BD7D87641BE2950600774774 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7D87671BE2950600774774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +88,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		BDA014F91BE2A3D70010B04B /* libraw */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = BDA014FA1BE2A3D70010B04B /* Build configuration list for PBXLegacyTarget "libraw" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/famseedesigner1/Samples/OSXSamples/Sample-LibRaw/LibRaw-0.17.0";
+			dependencies = (
+			);
+			name = libraw;
+			passBuildSettingsInEnvironment = 1;
+			productName = libraw;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		BD7D87631BE2950600774774 /* Sample */ = {
 			isa = PBXNativeTarget;
@@ -90,6 +117,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BDA014FE1BE2A41E0010B04B /* PBXTargetDependency */,
 			);
 			name = Sample;
 			productName = Sample;
@@ -108,6 +136,9 @@
 					BD7D87631BE2950600774774 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
+					BDA014F91BE2A3D70010B04B = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
 				};
 			};
 			buildConfigurationList = BD7D875F1BE2950600774774 /* Build configuration list for PBXProject "Sample" */;
@@ -124,6 +155,7 @@
 			projectRoot = "";
 			targets = (
 				BD7D87631BE2950600774774 /* Sample */,
+				BDA014F91BE2A3D70010B04B /* libraw */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +184,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDA014FE1BE2A41E0010B04B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDA014F91BE2A3D70010B04B /* libraw */;
+			targetProxy = BDA014FD1BE2A41E0010B04B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BD7D87721BE2950600774774 /* Main.storyboard */ = {
@@ -268,6 +308,29 @@
 			};
 			name = Release;
 		};
+		BDA014FB1BE2A3D70010B04B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BDA014FC1BE2A3D70010B04B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -285,6 +348,15 @@
 			buildConfigurations = (
 				BD7D87791BE2950600774774 /* Debug */,
 				BD7D877A1BE2950600774774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDA014FA1BE2A3D70010B04B /* Build configuration list for PBXLegacyTarget "libraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDA014FB1BE2A3D70010B04B /* Debug */,
+				BDA014FC1BE2A3D70010B04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
