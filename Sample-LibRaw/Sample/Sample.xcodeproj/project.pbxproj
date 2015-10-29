@@ -12,6 +12,10 @@
 		BD7D876F1BE2950600774774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7D876E1BE2950600774774 /* ViewController.m */; };
 		BD7D87711BE2950600774774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7D87701BE2950600774774 /* Assets.xcassets */; };
 		BD7D87741BE2950600774774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7D87721BE2950600774774 /* Main.storyboard */; };
+		BDA015041BE2A7000010B04B /* libm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA015031BE2A7000010B04B /* libm.tbd */; };
+		BDA015061BE2A7150010B04B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA015051BE2A7150010B04B /* libc++.tbd */; };
+		BDA015141BE2AAE90010B04B /* libraw_r.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA015111BE2A9640010B04B /* libraw_r.a */; };
+		BDA015151BE2AAE90010B04B /* libraw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA015121BE2A9640010B04B /* libraw.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		BD7D87701BE2950600774774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7D87731BE2950600774774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD7D87751BE2950600774774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA015031BE2A7000010B04B /* libm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libm.tbd; path = usr/lib/libm.tbd; sourceTree = SDKROOT; };
+		BDA015051BE2A7150010B04B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		BDA015111BE2A9640010B04B /* libraw_r.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraw_r.a; path = "../LibRaw-0.17.0/lib/.libs/libraw_r.a"; sourceTree = "<group>"; };
+		BDA015121BE2A9640010B04B /* libraw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraw.a; path = "../LibRaw-0.17.0/lib/.libs/libraw.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA015141BE2AAE90010B04B /* libraw_r.a in Frameworks */,
+				BDA015151BE2AAE90010B04B /* libraw.a in Frameworks */,
+				BDA015061BE2A7150010B04B /* libc++.tbd in Frameworks */,
+				BDA015041BE2A7000010B04B /* libm.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +62,7 @@
 		BD7D875B1BE2950600774774 = {
 			isa = PBXGroup;
 			children = (
+				BDA0150E1BE2A91F0010B04B /* Frameworks */,
 				BD7D87661BE2950600774774 /* Sample */,
 				BD7D87651BE2950600774774 /* Products */,
 			);
@@ -84,6 +97,17 @@
 				BD7D876B1BE2950600774774 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BDA0150E1BE2A91F0010B04B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDA015111BE2A9640010B04B /* libraw_r.a */,
+				BDA015121BE2A9640010B04B /* libraw.a */,
+				BDA015051BE2A7150010B04B /* libc++.tbd */,
+				BDA015031BE2A7000010B04B /* libm.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +313,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "/Users/famseedesigner1/Samples/OSXSamples/Sample-LibRaw/LibRaw-0.17.0/libraw";
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "/Users/famseedesigner1/Samples/OSXSamples/Sample-LibRaw/LibRaw-0.17.0/lib/.libs";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.carrotbooks.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -301,8 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "/Users/famseedesigner1/Samples/OSXSamples/Sample-LibRaw/LibRaw-0.17.0/libraw";
 				INFOPLIST_FILE = Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "/Users/famseedesigner1/Samples/OSXSamples/Sample-LibRaw/LibRaw-0.17.0/lib/.libs";
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.carrotbooks.Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

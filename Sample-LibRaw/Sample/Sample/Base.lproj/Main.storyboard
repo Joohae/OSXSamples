@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,12 +641,12 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
@@ -667,11 +667,73 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qwM-W0-hGT">
+                                <rect key="frame" x="20" y="228" width="310" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="QzH-fL-bYw"/>
+                                    <constraint firstAttribute="width" constant="310" id="kc7-Bz-6AQ"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cxp-ai-V8b">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YCt-Al-gGu">
+                                <rect key="frame" x="330" y="222" width="139" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8uH-wH-Ypl"/>
+                                    <constraint firstAttribute="width" constant="127" id="GXT-Eb-svI"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Select Directory" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lTb-Tw-ZTs">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didOpenDirectoryClicked:" target="XfG-lQ-9wD" id="yV7-8E-8Hq"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-xo-j9C">
+                                <rect key="frame" x="18" y="20" width="444" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="Aph-T3-LHw"/>
+                                </constraints>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Multiline Label" id="5Dm-XA-SF0">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tRv-9c-sCA">
+                                <rect key="frame" x="330" y="189" width="139" height="32"/>
+                                <buttonCell key="cell" type="push" title="Extract" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NR9-vq-Kcl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="didExtractClicked:" target="XfG-lQ-9wD" id="z9z-zz-FnO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YCt-Al-gGu" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="88H-Lw-2d1"/>
+                            <constraint firstAttribute="trailing" secondItem="jgT-xo-j9C" secondAttribute="trailing" constant="20" id="Bon-J5-JHp"/>
+                            <constraint firstItem="jgT-xo-j9C" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="82" id="Cd4-pG-hZU"/>
+                            <constraint firstItem="qwM-W0-hGT" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="HL3-fX-mtd"/>
+                            <constraint firstItem="qwM-W0-hGT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="L6I-ak-hhV"/>
+                            <constraint firstItem="jgT-xo-j9C" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Msf-kG-Ud3"/>
+                            <constraint firstAttribute="trailing" secondItem="YCt-Al-gGu" secondAttribute="trailing" constant="17" id="yEH-h1-Xqt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="directoryPath" destination="qwM-W0-hGT" id="Sfm-kA-7HL"/>
+                        <outlet property="messageBox" destination="jgT-xo-j9C" id="sG8-Hh-kEW"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
