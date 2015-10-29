@@ -1,1 +1,11 @@
 samples/lens-identify.cpp
+
+bin/
+
+.dirstamp
+
+*.o
+*.lo
+*.a
+*.la
+*.lai
