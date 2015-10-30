@@ -719,6 +719,10 @@
                                     <action selector="didExtractClicked:" target="XfG-lQ-9wD" id="z9z-zz-FnO"/>
                                 </connections>
                             </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dy6-5w-Ucb">
+                                <rect key="frame" x="20" y="20" width="440" height="168"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Kgv-SU-a7R"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="YCt-Al-gGu" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="88H-Lw-2d1"/>
@@ -732,6 +736,7 @@
                     </view>
                     <connections>
                         <outlet property="directoryPath" destination="qwM-W0-hGT" id="Sfm-kA-7HL"/>
+                        <outlet property="imageView" destination="Dy6-5w-Ucb" id="COS-m6-jf0"/>
                         <outlet property="messageBox" destination="jgT-xo-j9C" id="sG8-Hh-kEW"/>
                     </connections>
                 </viewController>

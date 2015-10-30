@@ -1,18 +1,12 @@
-//
-//  ViewController.m
-//  Sample
-//
-//  Created by FamSee Designer1 on 10/29/15.
-//  Copyright © 2015 Carrot Books. All rights reserved.
-//
-
 #import "ViewController.h"
 
 #import "libraw.h"
+#import "RawImageImporter.h"
 
 @interface ViewController()
 @property (weak) IBOutlet NSTextField *directoryPath;
 @property (weak) IBOutlet NSTextField *messageBox;
+@property (weak) IBOutlet NSImageView *imageView;
 
 @end
 
@@ -64,6 +58,14 @@
     for (NSURL *fileUrl in onlyRawFiles) {
         NSString *path = [fileUrl path];
         [self extractThumbnailFromRawImage:path];
+        
+        NSImage *thumb = [RawImagerImporter getThumbnailFromFile:path];
+        [self saveAsJpeg:[NSString stringWithFormat:@"%@.thumb2.jpg", path] data:thumb];
+        _imageView.image = thumb;
+        
+//        NSImage *image = [RawImagerImporter getUIImageFromFile:path];
+//        [self saveAsJpeg:[NSString stringWithFormat:@"%@.extract.jpg", path] data:image];
+        break;
     }
 }
 
@@ -81,5 +83,19 @@
     cr2Data->params.use_camera_wb = 1;
     libraw_dcraw_thumb_writer(cr2Data, [outputFile UTF8String]);
     libraw_recycle(cr2Data);
+}
+
+-(void)saveAsJpeg:(NSString *)savePath data:(NSImage *)image {
+    //  Compress and save cache file
+    NSData *response = nil;
+    float compression = 0.8; // COMPRESSION_RATIO would be 0.8
+    NSBitmapImageRep * rep = [NSBitmapImageRep imageRepWithData:image.TIFFRepresentation];
+    response = [rep representationUsingType:NSJPEGFileType
+                                 properties:@{NSImageCompressionFactor:@(compression),
+                                              NSImageProgressive:@NO
+                                              }
+                ];
+    
+   [response writeToFile:savePath atomically:NO];
 }
 @end

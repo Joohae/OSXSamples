@@ -16,6 +16,7 @@
 		BDA015061BE2A7150010B04B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA015051BE2A7150010B04B /* libc++.tbd */; };
 		BDA015141BE2AAE90010B04B /* libraw_r.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA015111BE2A9640010B04B /* libraw_r.a */; };
 		BDA015151BE2AAE90010B04B /* libraw.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA015121BE2A9640010B04B /* libraw.a */; };
+		BDA015171BE2C8200010B04B /* RawImageImporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDA015161BE2C8200010B04B /* RawImageImporter.mm */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		BDA015051BE2A7150010B04B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		BDA015111BE2A9640010B04B /* libraw_r.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraw_r.a; path = "../LibRaw-0.17.0/lib/.libs/libraw_r.a"; sourceTree = "<group>"; };
 		BDA015121BE2A9640010B04B /* libraw.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraw.a; path = "../LibRaw-0.17.0/lib/.libs/libraw.a"; sourceTree = "<group>"; };
+		BDA015161BE2C8200010B04B /* RawImageImporter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RawImageImporter.mm; sourceTree = "<group>"; };
+		BDA015181BE2C8730010B04B /* RawImageImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RawImageImporter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				BD7D87721BE2950600774774 /* Main.storyboard */,
 				BD7D87751BE2950600774774 /* Info.plist */,
 				BD7D876A1BE2950600774774 /* Supporting Files */,
+				BDA015181BE2C8730010B04B /* RawImageImporter.h */,
+				BDA015161BE2C8200010B04B /* RawImageImporter.mm */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA015171BE2C8200010B04B /* RawImageImporter.mm in Sources */,
 				BD7D876F1BE2950600774774 /* ViewController.m in Sources */,
 				BD7D876C1BE2950600774774 /* main.m in Sources */,
 				BD7D87691BE2950600774774 /* AppDelegate.m in Sources */,
@@ -387,6 +393,7 @@
 				BDA014FC1BE2A3D70010B04B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
