@@ -49,8 +49,8 @@
                                       includingPropertiesForKeys:@[]
                                                          options:NSDirectoryEnumerationSkipsHiddenFiles
                                                            error:nil];
-    NSArray *targetExtension = @[@"CR2", @"CRW", @"NEF", @"ORF", @"RAF", @"DCR", @"DNG",
-                                 @"cr2", @"crw", @"nef", @"orf", @"raf", @"dcr", @"dng"
+    NSArray *targetExtension = @[@"CR2", @"CRW", @"NEF", @"ORF", @"RAF", @"DCR", @"DNG", @"MOS",
+                                 @"cr2", @"crw", @"nef", @"orf", @"raf", @"dcr", @"dng", @"mos"
                                  ];
     NSPredicate *rawFileFilter = [NSPredicate predicateWithFormat:@"pathExtension IN[cd] %@", targetExtension];
     NSArray *onlyRawFiles = [dirContents filteredArrayUsingPredicate:rawFileFilter];
@@ -59,13 +59,13 @@
         NSString *path = [fileUrl path];
         [self extractThumbnailFromRawImage:path];
         
-        NSImage *thumb = [RawImagerImporter getThumbnailFromFile:path];
-        [self saveAsJpeg:[NSString stringWithFormat:@"%@.thumb2.jpg", path] data:thumb];
-        _imageView.image = thumb;
+//        NSImage *thumb = [RawImagerImporter getThumbnailFromFile:path];
+//        [self saveAsJpeg:[NSString stringWithFormat:@"%@.thumb2.jpg", path] data:thumb];
+//        _imageView.image = thumb;
         
 //        NSImage *image = [RawImagerImporter getUIImageFromFile:path];
 //        [self saveAsJpeg:[NSString stringWithFormat:@"%@.extract.jpg", path] data:image];
-        break;
+//        break;
     }
 }
 
